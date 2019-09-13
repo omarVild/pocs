@@ -6,6 +6,7 @@ public class Product {
 	private Integer precioNormal;
 	private Integer precioObjetivo;
 	private float porcentajePrecioObjetivo;
+	private boolean isURLbroken;
 	
 	public Product(String urlProductoTMP, Integer precioObjetivoTMP) {
 		this.urlProducto = urlProductoTMP;
@@ -35,5 +36,11 @@ public class Product {
 	}
 	public float getPorcentajePrecioObjetivo() {
 		return porcentajePrecioObjetivo;
+	}
+	public boolean isURLbroken() {
+		return isURLbroken;
+	}
+	public void setURLbroken(boolean isURLbroken) {
+		this.isURLbroken = isURLbroken;
 	}
 }

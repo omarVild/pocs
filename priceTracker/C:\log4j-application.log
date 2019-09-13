@@ -51,3 +51,57 @@
 2019-09-12 22:59:28 INFO  Tracker:24 - Precio objetivo alcanzado:false
 2019-09-12 22:59:28 INFO  Tracker:28 - ********Muy caro, no me notifiques
 2019-09-12 22:59:28 INFO  URLReader:19 - URL Producto: https://www.amazon.com.mx/Meguiar%C2%B4s-G190526-Cera-Cer%C3%A1mica-Empaque/dp/B06WVQ6MVR/ref=sr_1_14?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=meguiars&qid=1568339530&s=gateway&sr=8-14
+2019-09-13 00:04:52 INFO  App:42 - *********iniciando verificacion de precios**********
+2019-09-13 00:04:52 INFO  URLReader:19 - URL Producto: https://www.liverpool.com.mx/tienda/pdp/abrillantador-meguiar's-ultimate-quick-detailer-negro/61837434
+2019-09-13 00:04:57 INFO  Verifier:72 - Muy caro:$328
+2019-09-13 00:04:57 INFO  App:47 - Precio objetivo alcanzado:false
+2019-09-13 00:04:57 INFO  App:51 - ********Muy caro, no me notifiques
+2019-09-13 00:04:57 INFO  URLReader:19 - URL Producto: https://www.amazon.com.mx/Meguiar%C2%B4s-G190526-Cera-Cer%C3%A1mica-Empaque/dp/B06WVQ6MVR/ref=sr_1_14?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=meguiars&qid=1568339530&s=gateway&sr=8-14
+2019-09-13 00:04:59 INFO  Verifier:72 - Muy caro:$732.54
+2019-09-13 00:04:59 INFO  App:47 - Precio objetivo alcanzado:false
+2019-09-13 00:04:59 INFO  App:51 - ********Muy caro, no me notifiques
+2019-09-13 00:04:59 INFO  App:36 - Esperando 30s...
+2019-09-13 00:05:21 INFO  App:43 - *********iniciando verificacion de precios**********
+2019-09-13 00:05:21 INFO  URLReader:19 - URL Producto: https://www.liverpool.com.mx/tienda/pdp/abrillantador-meguiar's-ultimate-quick-detailer-negro/61837434
+2019-09-13 00:05:25 INFO  Verifier:72 - Muy caro:$328
+2019-09-13 00:05:25 INFO  App:48 - Precio objetivo alcanzado:false
+2019-09-13 00:05:25 INFO  App:52 - ********Muy caro, no me notifiques
+2019-09-13 00:05:25 INFO  URLReader:19 - URL Producto: https://www.amazon.com.mx/Meguiar%C2%B4s-G190526-Cera-Cer%C3%A1mica-Empaque/dp/B06WVQ6MVR/ref=sr_1_14?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=meguiars&qid=1568339530&s=gateway&sr=8-14
+2019-09-13 00:05:28 INFO  Verifier:72 - Muy caro:$732.54
+2019-09-13 00:05:28 INFO  App:48 - Precio objetivo alcanzado:false
+2019-09-13 00:05:28 INFO  App:52 - ********Muy caro, no me notifiques
+2019-09-13 00:05:28 INFO  App:36 - Esperando 30s...
+2019-09-13 00:07:00 INFO  App:43 - *********iniciando verificacion de precios**********
+2019-09-13 00:07:00 INFO  URLReader:19 - URL Producto: https://www.liverpool.com.mx/tienda/pdp/abrillantador-meguiar's-ultimate-quick-detailer-negro/61837434
+2019-09-13 00:07:25 INFO  App:43 - *********iniciando verificacion de precios**********
+2019-09-13 00:07:25 INFO  URLReader:19 - URL Producto: https://www.liverpool.com.mx/tienda/pdp/abrillantador-meguiar's-ultimate-quick-detailer-negro/61837434
+2019-09-13 00:08:02 INFO  Verifier:72 - Muy caro:$328
+2019-09-13 00:08:02 INFO  App:49 - Precio objetivo alcanzado:false
+2019-09-13 00:08:02 INFO  App:53 - ********Muy caro, no me notifiques
+2019-09-13 00:08:02 INFO  URLReader:19 - URL Producto: https://www.amazon.com.mx/Meguiar%C2%B4s-G190526-Cera-Cer%C3%A1mica-Empaque/dp/B06WVQ6MVR/ref=sr_1_14?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=meguiars&qid=1568339530&s=gateway&sr=8-14
+2019-09-13 00:08:06 INFO  Verifier:72 - Muy caro:$732.54
+2019-09-13 00:08:06 INFO  App:49 - Precio objetivo alcanzado:false
+2019-09-13 00:08:06 INFO  App:53 - ********Muy caro, no me notifiques
+2019-09-13 00:08:06 INFO  App:36 - Esperando 30s...
+2019-09-13 00:11:50 INFO  App:43 - *********iniciando verificacion de precios**********
+2019-09-13 00:11:50 INFO  URLReader:19 - URL Producto: https://www.liverpool.com.mx/tienda/pdp/abrillantador-meguiar's-ultimate-quick-detailer-negro/61837434
+2019-09-13 00:12:14 INFO  Verifier:71 - Muy caro:$328
+2019-09-13 00:12:14 INFO  App:48 - Precio objetivo alcanzado:false
+2019-09-13 00:12:14 INFO  App:52 - ********Muy caro, no me notifiques
+2019-09-13 00:12:14 INFO  URLReader:19 - URL Producto: https://www.amazon.com.mx/Meguiar%C2%B4s-G190526-Cera-Cer%C3%A1mica-Empaque/dp/B06WVQ6MVR/ref=sr_1_14?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=meguiars&qid=1568339530&s=gateway&sr=8-14
+2019-09-13 00:12:24 INFO  Verifier:71 - Muy caro:$732.54
+2019-09-13 00:12:24 INFO  App:48 - Precio objetivo alcanzado:false
+2019-09-13 00:12:24 INFO  App:52 - ********Muy caro, no me notifiques
+2019-09-13 00:12:24 INFO  App:36 - Esperando 60s...
+2019-09-13 00:13:51 INFO  App:43 - *********iniciando verificacion de precios**********
+2019-09-13 00:13:51 INFO  URLReader:19 - URL Producto: https://www.liverpool.com.mx/tienda/pdp/abrillantador-meguiar's-ultimate-quick-detailer-negro/61837434
+2019-09-13 00:14:18 INFO  Verifier:63 - buscando por precio objetivo
+2019-09-13 00:14:18 INFO  Verifier:73 - Muy caro:$328
+2019-09-13 00:14:18 INFO  App:48 - Precio objetivo alcanzado:false
+2019-09-13 00:14:18 INFO  App:52 - ********Muy caro, no me notifiques
+2019-09-13 00:14:18 INFO  URLReader:19 - URL Producto: https://www.amazon.com.mx/Meguiar%C2%B4s-G190526-Cera-Cer%C3%A1mica-Empaque/dp/B06WVQ6MVR/ref=sr_1_14?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=meguiars&qid=1568339530&s=gateway&sr=8-14
+2019-09-13 00:14:27 INFO  Verifier:66 - buscando por porcentaje descuento
+2019-09-13 00:14:27 INFO  Verifier:73 - Muy caro:$732.54
+2019-09-13 00:14:27 INFO  App:48 - Precio objetivo alcanzado:false
+2019-09-13 00:14:27 INFO  App:52 - ********Muy caro, no me notifiques
+2019-09-13 00:14:27 INFO  App:36 - Esperando 60s...
