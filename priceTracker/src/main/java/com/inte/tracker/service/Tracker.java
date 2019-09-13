@@ -5,11 +5,14 @@ import java.util.List;
 
 import javax.management.InvalidAttributeValueException;
 
+import org.apache.log4j.Logger;
+
 import com.inte.tracker.model.Product;
 
 public class Tracker {
 	
 	private static Verifier verificadorPrecio = new Verifier();
+	static final Logger logger = Logger.getLogger(Tracker.class);
 	
 	private Tracker() {
 	}
@@ -18,20 +21,20 @@ public class Tracker {
 		for(Product producto: productos) {
 			try {
 				boolean precioObjetivoAlcanzado = verificadorPrecio.verifyPrice(producto);
-				System.out.println(precioObjetivoAlcanzado);
+				logger.info("Precio objetivo alcanzado:" + precioObjetivoAlcanzado);
 				if(precioObjetivoAlcanzado) {
-					System.out.println("*****Enviando correo de notificacion");
+					logger.info("*****Enviando correo de notificacion");
 				}else {
-					System.out.println("********Muy caro, no me notifiques");
+					logger.info("********Muy caro, no me notifiques");
 				}
 				
 			} catch (IOException e) {
-				System.out.println("Servicio no disponible, intenta mas tarde");
+				logger.info("Servicio no disponible, intenta mas tarde");
 				e.printStackTrace();
 			}catch (NumberFormatException e) {
 				e.printStackTrace();
 			}catch (InvalidAttributeValueException e) {
-				System.out.println("No se puede leer el elemento precio");
+				logger.info("No se puede leer el elemento precio");
 			}
 		}
 	}

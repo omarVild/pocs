@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import javax.management.InvalidAttributeValueException;
 
+import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -13,7 +14,8 @@ import com.inte.tracker.model.Product;
 import com.inte.tracker.utils.URLReader;
 
 public class Verifier {
-
+	static final Logger logger = Logger.getLogger(Verifier.class);
+	
 	private String priceHTMLClassElementLiverpool = "a-product__paragraphDiscountPrice m-0 d-inline ";
 	private String priceHTMLClassElementAmazon = "a-size-medium a-color-price priceBlockBuyingPriceString";
 
@@ -53,20 +55,20 @@ public class Verifier {
 			element = verifyAmazon(producto);
 		}
 		String precioActualStr = element.text();
-		Integer precioActualInt = null;
+		Float precioActualInt = null;
 		try {
-			precioActualInt = Integer.parseInt(precioActualStr.replace("$", ""));
+			precioActualInt = Float.parseFloat(precioActualStr.replace("$", ""));
 			Float precioObjetivo = null;
 			if (producto.getPrecioObjetivo() != null) {
 				precioObjetivo = producto.getPrecioObjetivo().floatValue();
 			} else {
 				precioObjetivo = producto.getPrecioNormal() * producto.getPorcentajePrecioObjetivo();
 			}
-			if (precioActualInt < precioObjetivo) {
-				System.out.println("Precio objetivo:" + precioActualStr);
+			if (precioActualInt.floatValue() < precioObjetivo.floatValue()) {
+				logger.info("Precio actual:" + precioActualStr);
 				isPrecioObjetivoAlcanzado = true;
 			} else {
-				System.out.println("Muy caro:" + precioActualStr);
+				logger.info("Muy caro:" + precioActualStr);
 			}
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
