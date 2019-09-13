@@ -1,21 +1,20 @@
 package com.inte.tracker.service;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.List;
+
+import javax.management.InvalidAttributeValueException;
 
 import com.inte.tracker.model.Product;
 
 public class Tracker {
 	
+	private static Verifier verificadorPrecio = new Verifier();
 	
-	public static void main(String[] args) {
-		
-		ArrayList<Product> productos = new ArrayList<Product>();
-		Verifier verificadorPrecio = new Verifier();
-		
-		Product quickDetailer =  new Product("https://www.liverpool.com.mx/tienda/pdp/abrillantador-meguiar's-ultimate-quick-detailer-negro/61837434", 328, 0.8f);
-		productos.add(quickDetailer);
-		
+	private Tracker() {
+	}
+	
+	public static void verifyPrices(List<Product> productos ) {	
 		for(Product producto: productos) {
 			try {
 				boolean precioObjetivoAlcanzado = verificadorPrecio.verifyPrice(producto);
@@ -31,6 +30,8 @@ public class Tracker {
 				e.printStackTrace();
 			}catch (NumberFormatException e) {
 				e.printStackTrace();
+			}catch (InvalidAttributeValueException e) {
+				System.out.println("No se puede leer el elemento precio");
 			}
 		}
 	}
