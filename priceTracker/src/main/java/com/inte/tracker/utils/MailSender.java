@@ -15,8 +15,9 @@ import com.inte.tracker.model.Product;
 public class MailSender {
 	
 	public static void sendNotification(Product producto) {
-		final String username = "XXXXXXXXXXXXXXX"; // like yourname@outlook.com
-		final String password = "XXXXXXXXXXXXXXX"; // password here
+		
+		final String username = ApplicationProperties.INSTANCE.getMailUser();
+		final String password = ApplicationProperties.INSTANCE.getMailPass();
 
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");
@@ -36,7 +37,7 @@ public class MailSender {
 
 			Message message = new MimeMessage(session);
 			message.setFrom(new InternetAddress(username));
-			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("XXXXXXXXXXXXX")); 
+			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(ApplicationProperties.INSTANCE.getMailUser())); 
 			message.setSubject(producto.getTitle());
 			message.setText("El producto " + producto.getTitle() + " bajo de precio");
 

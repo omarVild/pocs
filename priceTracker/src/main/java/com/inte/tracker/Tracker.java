@@ -21,8 +21,9 @@ public class Tracker {
 
 	private static Verifier verificadorPrecio = new Verifier();
 	
-	//@Scheduled(fixedRate = 50000)
-	@Scheduled(cron = "0 0/1 * * * *")
+	@Scheduled(fixedRate = 50000)
+	//@Scheduled(cron = "0 0/1 * * * *")
+	//@Scheduled(cron = "0 0 6,15,20,1 * * *")
 	public static void initProducts() {
 		ArrayList<Product> productos = new ArrayList<>();
 

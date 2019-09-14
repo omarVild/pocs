@@ -321,3 +321,61 @@
 2019-09-13 23:15:40 INFO  Tracker:71 - Precio objetivo alcanzado:false
 2019-09-13 23:15:40 INFO  Tracker:76 - ********Muy caro, no me notifiques
 2019-09-13 23:15:40 INFO  URLReader:19 - URL Producto: https://www.amazon.com.mx/Meguiars%C2%B4s-X2000-Toalla-de-Secado/dp/B007VTRBPA/ref=sr_1_34?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=meguiars&qid=1568426728&s=gateway&sr=8-34
+2019-09-14 11:03:00 INFO  Tracker:67 - *********iniciando verificacion de precios**********
+2019-09-14 11:03:00 INFO  URLReader:19 - URL Producto: https://www.liverpool.com.mx/tienda/pdp/abrillantador-meguiar's-ultimate-quick-detailer-negro/61837434
+2019-09-14 11:03:04 INFO  Verifier:64 - Verificando precio para: Abrillantador Meguiar's Ultimate Quick Detailer negro
+2019-09-14 11:03:04 INFO  Verifier:69 - buscando por precio objetivo
+2019-09-14 11:03:04 INFO  Verifier:79 - Muy caro:$328
+2019-09-14 11:03:04 INFO  Tracker:72 - Precio objetivo alcanzado:false
+2019-09-14 11:03:04 INFO  Tracker:77 - ********Muy caro, no me notifiques
+2019-09-14 11:03:04 INFO  URLReader:19 - URL Producto: https://www.amazon.com.mx/Meguiar%C2%B4s-G190526-Cera-Cer%C3%A1mica-Empaque/dp/B06WVQ6MVR/ref=sr_1_14?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=meguiars&qid=1568339530&s=gateway&sr=8-14
+2019-09-14 11:03:30 INFO  Tracker:67 - *********iniciando verificacion de precios**********
+2019-09-14 11:03:30 INFO  URLReader:19 - URL Producto: https://www.liverpool.com.mx/tienda/pdp/abrillantador-meguiar's-ultimate-quick-detailer-negro/61837434
+2019-09-14 11:03:34 INFO  Verifier:64 - Verificando precio para: Abrillantador Meguiar's Ultimate Quick Detailer negro
+2019-09-14 11:03:34 INFO  Verifier:69 - buscando por precio objetivo
+2019-09-14 11:03:34 INFO  Verifier:76 - Precio actual:$328
+2019-09-14 11:03:34 INFO  Tracker:72 - Precio objetivo alcanzado:true
+2019-09-14 11:03:34 INFO  Tracker:74 - *****Enviando correo de notificacion
+2019-09-14 11:03:39 INFO  URLReader:19 - URL Producto: https://www.amazon.com.mx/Meguiar%C2%B4s-G190526-Cera-Cer%C3%A1mica-Empaque/dp/B06WVQ6MVR/ref=sr_1_14?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=meguiars&qid=1568339530&s=gateway&sr=8-14
+2019-09-14 11:03:42 INFO  Verifier:64 - Verificando precio para: Meguiar´s G190526 G190526 Cera Cerámica, 786, Azul Empaque de, 1 Empaque de
+2019-09-14 11:03:42 INFO  Verifier:72 - buscando por porcentaje descuento
+2019-09-14 11:03:42 INFO  Verifier:79 - Muy caro:$732.54
+2019-09-14 11:03:42 INFO  Tracker:72 - Precio objetivo alcanzado:false
+2019-09-14 11:03:42 INFO  Tracker:77 - ********Muy caro, no me notifiques
+2019-09-14 11:03:42 INFO  URLReader:19 - URL Producto: https://www.amazon.com.mx/GoPro-Battery-Charger-Official-Accessory/dp/B01LZHRYJS/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=GoPro+Dual+Battery+Charger&qid=1568425640&s=electronics&sr=1-1
+2019-09-14 11:03:47 INFO  Verifier:64 - Verificando precio para: GoPro Dual Battery Charger + Battery (HERO5 Black) (GoPro Official Accessory)
+2019-09-14 11:03:47 INFO  Verifier:72 - buscando por porcentaje descuento
+2019-09-14 11:03:47 INFO  Verifier:79 - Muy caro:$1,184.00
+2019-09-14 11:03:47 INFO  Tracker:72 - Precio objetivo alcanzado:false
+2019-09-14 11:03:47 INFO  Tracker:77 - ********Muy caro, no me notifiques
+2019-09-14 11:03:47 INFO  URLReader:19 - URL Producto: https://www.amazon.com.mx/Meguiars%C2%B4s-X2000-Toalla-de-Secado/dp/B007VTRBPA/ref=sr_1_34?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=meguiars&qid=1568426728&s=gateway&sr=8-34
+2019-09-14 11:03:51 INFO  Verifier:64 - Verificando precio para: Meguiar´s X2000 Toalla de Secado
+2019-09-14 11:03:51 INFO  Verifier:72 - buscando por porcentaje descuento
+2019-09-14 11:03:51 INFO  Verifier:79 - Muy caro:$697.44
+2019-09-14 11:03:51 INFO  Tracker:72 - Precio objetivo alcanzado:false
+2019-09-14 11:03:51 INFO  Tracker:77 - ********Muy caro, no me notifiques
+2019-09-14 11:03:51 INFO  URLReader:19 - URL Producto: https://www.amazon.com.mx/Meguiars-Cera-L%C3%ADquida-Pulir-G18216/dp/B06WVGZL5W/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=meguiars%2Bwax&qid=1568427340&s=gateway&sr=8-1&th=1
+2019-09-14 11:03:55 INFO  Verifier:64 - Verificando precio para: Meguiar's Ultimate - Cera líquida, 20 oz. / 591 ML
+2019-09-14 11:03:55 INFO  Verifier:72 - buscando por porcentaje descuento
+2019-09-14 11:03:55 INFO  Verifier:79 - Muy caro:$426.92
+2019-09-14 11:03:55 INFO  Tracker:72 - Precio objetivo alcanzado:false
+2019-09-14 11:03:55 INFO  Tracker:77 - ********Muy caro, no me notifiques
+2019-09-14 11:03:55 INFO  URLReader:19 - URL Producto: https://www.amazon.com.mx/Meguiars%C2%B4s-G190315-Abrillantador-Llantas-Recubrimiento/dp/B06W5FXCMS/ref=sr_1_108?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=meguiars&qid=1568427680&s=gateway&sr=8-108
+2019-09-14 11:03:59 INFO  Verifier:64 - Verificando precio para: Meguiar's´s G190315 Abrillantador de Llantas con Recubrimiento, pequeño, Negro Empaque de, 1 Empaque de
+2019-09-14 11:03:59 INFO  Verifier:72 - buscando por porcentaje descuento
+2019-09-14 11:03:59 INFO  Verifier:79 - Muy caro:$499.53
+2019-09-14 11:03:59 INFO  Tracker:72 - Precio objetivo alcanzado:false
+2019-09-14 11:03:59 INFO  Tracker:77 - ********Muy caro, no me notifiques
+2019-09-14 11:03:59 INFO  URLReader:19 - URL Producto: https://www.liverpool.com.mx/tienda/pdp/sellador-de-parabrisas-meguiar's-glass/1078971629
+2019-09-14 11:04:03 INFO  Verifier:64 - Verificando precio para: Sellador de parabrisas Meguiar's Glass
+2019-09-14 11:04:03 INFO  Verifier:72 - buscando por porcentaje descuento
+2019-09-14 11:04:03 INFO  Verifier:79 - Muy caro:$279
+2019-09-14 11:04:03 INFO  Tracker:72 - Precio objetivo alcanzado:false
+2019-09-14 11:04:03 INFO  Tracker:77 - ********Muy caro, no me notifiques
+2019-09-14 11:04:03 INFO  URLReader:19 - URL Producto: https://www.amazon.com.mx/Meguiars-G190719-Limpiador-cristales-peque%C3%B1o/dp/B06WLQH52X/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=Meguiars+Limpiador+de+cristales%2C&qid=1568430588&s=automotive&sr=1-1
+2019-09-14 11:04:07 INFO  Verifier:64 - Verificando precio para: Meguiar's G190719 No aplica Limpiador de cristales, pequeño, Negro oscuro Empaque de, 1 Empaque de
+2019-09-14 11:04:07 INFO  Verifier:72 - buscando por porcentaje descuento
+2019-09-14 11:04:07 INFO  Verifier:79 - Muy caro:$297.90
+2019-09-14 11:04:07 INFO  Tracker:72 - Precio objetivo alcanzado:false
+2019-09-14 11:04:07 INFO  Tracker:77 - ********Muy caro, no me notifiques
+2019-09-14 11:04:07 INFO  Tracker:63 - ****fin****
