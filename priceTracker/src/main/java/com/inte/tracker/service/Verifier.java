@@ -17,8 +17,11 @@ public class Verifier {
 	static final Logger logger = Logger.getLogger(Verifier.class);
 	
 	private String priceHTMLClassElementLiverpool = "a-product__paragraphDiscountPrice m-0 d-inline ";
+	private String titleHTMLClassElementLiverpool = "a-product__information--title";
+	
 	private String priceHTMLClassElementAmazon = "a-size-medium a-color-price priceBlockBuyingPriceString";
-
+	private String titleHTMLClassElementAmazon = "productTitle";
+	
 	private String urlLiverpool = "https://www.liverpool.com.mx/";
 	private String urlAmazon = "https://www.amazon.com.mx";
 	
@@ -32,6 +35,7 @@ public class Verifier {
 		if (els == null || els.isEmpty()) {
 			throw new InvalidAttributeValueException("No se puede leer el elemento precio");
 		}
+		producto.setTitle(titleElementLiverpool(doc, titleHTMLClassElementLiverpool));
 		return els.get(0);
 	}
 
@@ -43,6 +47,7 @@ public class Verifier {
 		if (els == null || els.isEmpty()) {
 			throw new InvalidAttributeValueException("No se puede leer el elemento precio");
 		}
+		producto.setTitle(titleElementAmazon(doc, titleHTMLClassElementAmazon));
 		return els.get(0);
 	}
 
@@ -56,8 +61,9 @@ public class Verifier {
 		}
 		String precioActualStr = element.text();
 		Float precioActualInt = null;
+		logger.info("Verificando precio para: " + producto.getTitle());
 		try {
-			precioActualInt = Float.parseFloat(precioActualStr.replace("$", ""));
+			precioActualInt = Float.parseFloat(precioActualStr.replace("$", "").replace(",", ""));
 			Float precioObjetivo = null;
 			if (producto.getPrecioObjetivo() != null) {
 				logger.info("buscando por precio objetivo");
@@ -77,6 +83,24 @@ public class Verifier {
 			throw e;
 		}
 		return isPrecioObjetivoAlcanzado;
+	}
+	
+	private String titleElementAmazon(Document doc, String idElementTitle) {
+		Element title = doc.getElementById(idElementTitle);
+		String titleTXT = "Titulo no disponible";
+		if(title!= null) {
+			titleTXT =  title.text();
+		}
+		return titleTXT;
+	}
+	
+	private String titleElementLiverpool(Document doc, String classElementTitle) {
+		Elements title = doc.getElementsByClass(classElementTitle);
+		String titleTXT = "Titulo no disponible";
+		if(title!= null && !title.isEmpty()) {
+			titleTXT =  title.get(0).text();
+		}
+		return titleTXT;
 	}
 
 	public String getPriceHTMLClassElementLiverpool() {

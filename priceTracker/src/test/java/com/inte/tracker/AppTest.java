@@ -2,8 +2,6 @@ package com.inte.tracker;
 
 import java.io.IOException;
 
-import org.junit.Test;
-
 import com.inte.tracker.utils.URLReader;
 
 /**
@@ -11,11 +9,10 @@ import com.inte.tracker.utils.URLReader;
  */
 public class AppTest {
 
-	@Test
 	public void testURLReader() throws IOException {
 		String theURL = "https://www.amazon.com.mx/";
 		StringBuilder sb = URLReader.getUrlContents(theURL);
-		System.out.println(sb.toString());
-		
+		System.out.println(sb.toString());	
 	}
+		
 }
