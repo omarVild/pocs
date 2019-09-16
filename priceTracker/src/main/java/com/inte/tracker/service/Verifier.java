@@ -65,7 +65,7 @@ public class Verifier {
 		try {
 			precioActualInt = Float.parseFloat(precioActualStr.replace("$", "").replace(",", ""));
 			Float precioObjetivo = null;
-			if (producto.getPrecioObjetivo() != null) {
+			if (producto.getPrecioObjetivo() != null && producto.getPrecioObjetivo()>0) {
 				logger.info("buscando por precio objetivo");
 				precioObjetivo = producto.getPrecioObjetivo().floatValue();
 			} else {

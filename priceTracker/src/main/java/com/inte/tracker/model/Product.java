@@ -6,7 +6,6 @@ public class Product {
 	private Integer precioNormal;
 	private Integer precioObjetivo;
 	private float porcentajePrecioObjetivo;
-	private boolean isURLbroken;
 	private String title;
 	
 	public Product(String urlProductoTMP, Integer precioObjetivoTMP) {
@@ -38,16 +37,22 @@ public class Product {
 	public float getPorcentajePrecioObjetivo() {
 		return porcentajePrecioObjetivo;
 	}
-	public boolean isURLbroken() {
-		return isURLbroken;
-	}
-	public void setURLbroken(boolean isURLbroken) {
-		this.isURLbroken = isURLbroken;
-	}
 	public String getTitle() {
 		return title;
 	}
 	public void setTitle(String title) {
 		this.title = title;
 	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("urlProducto: "+urlProducto +"\n");
+		sb.append("precioNormal: "+ precioNormal+"\n");
+		sb.append("precioObjetivo: "+ precioObjetivo+"\n");
+		sb.append("porcentajePrecioObjetivo: "+ porcentajePrecioObjetivo+"\n");
+		sb.append("title: "+ title+"\n");
+		return sb.toString();
+	}
+	
 }
