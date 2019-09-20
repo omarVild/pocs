@@ -19,7 +19,8 @@ public class Verifier {
 	private String priceHTMLClassElementLiverpool = "a-product__paragraphDiscountPrice m-0 d-inline ";
 	private String titleHTMLClassElementLiverpool = "a-product__information--title";
 	
-	private String priceHTMLClassElementAmazon = "a-size-medium a-color-price priceBlockBuyingPriceString";
+	private String priceHTMLClassElementAmazon = "priceblock_ourprice";
+	private String priceDealHTMLClassElementAmazon = "priceblock_dealprice";
 	private String titleHTMLClassElementAmazon = "productTitle";
 	
 	private String urlLiverpool = "https://www.liverpool.com.mx/";
@@ -41,14 +42,16 @@ public class Verifier {
 
 	private Element verifyAmazon(Product producto) throws IOException, InvalidAttributeValueException {
 		StringBuilder output = URLReader.getUrlContents(producto.getUrlProducto());
-		Document doc = Jsoup.parse(output.toString());
-		Elements els = doc.getElementsByClass(priceHTMLClassElementAmazon);
-		doc.clearAttributes();
-		if (els == null || els.isEmpty()) {
+		Document doc = Jsoup.parse(output.toString());		
+		Element price = doc.getElementById(priceHTMLClassElementAmazon);
+		if (price==null || price.text().isEmpty()) {
+			price = doc.getElementById(priceDealHTMLClassElementAmazon);
+		}
+		if (price==null || price.text().isEmpty()) {
 			throw new InvalidAttributeValueException("No se puede leer el elemento precio");
 		}
 		producto.setTitle(titleElementAmazon(doc, titleHTMLClassElementAmazon));
-		return els.get(0);
+		return price;
 	}
 
 	public boolean verifyPrice(Product producto) throws IOException, InvalidAttributeValueException {
