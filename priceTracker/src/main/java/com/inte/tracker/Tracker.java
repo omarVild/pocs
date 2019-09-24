@@ -21,27 +21,31 @@ public class Tracker {
 
 	private static Verifier verificadorPrecio = new Verifier();
 	
-	@Scheduled(fixedRate = 50000)
+	@Scheduled(fixedRate = 900000)
 	//@Scheduled(cron = "0 0/10 * * * *")
-	//@Scheduled(cron = "0 0 0,7,13,22 * * *", zone = "America/Mexico_City")
-	public static void initProducts() {
+	//@Scheduled(cron = "0 0 0,7,13,21,23 * * *", zone = "America/Mexico_City")
+	public static void initProducts() throws IOException {
 		JsonProductReader jpr = new JsonProductReader();
 		initTracker(verificadorPrecio, jpr.getProductList());
 		logger.info("****fin****");
 	}
 	
-	private static void initTracker(Verifier verificadorPrecio, List<Product> productos) {
+	private static void initTracker(Verifier verificadorPrecio, List<Product> productos) throws IOException {
+		JsonProductReader jpr = new JsonProductReader();
 		logger.info("*********iniciando verificacion de precios**********");
 		for (Product producto : productos) {
 			try {
-				System.out.println("");
-				boolean precioObjetivoAlcanzado = verificadorPrecio.verifyPrice(producto);
-				logger.info("Precio objetivo alcanzado:" + precioObjetivoAlcanzado);
-				if (precioObjetivoAlcanzado) {
-					logger.info("*****Enviando correo de notificacion");
-					MailSender.sendNotification(producto);
-				} else {
-					logger.info("********Muy caro, no me notifiques");
+				if(!producto.isNotificado()) {
+					System.out.println("");
+					boolean precioObjetivoAlcanzado = verificadorPrecio.verifyPrice(producto);
+					logger.info("Precio objetivo alcanzado:" + precioObjetivoAlcanzado);
+					if (precioObjetivoAlcanzado) {
+						logger.info("*****Enviando correo de notificacion");
+						MailSender.sendNotification(producto);
+						producto.setNotificado(true);
+					} else {
+						logger.info("********Muy caro, no me notifiques");
+					}
 				}
 			} catch (IOException e) {
 				logger.info("Servicio no disponible, intenta mas tarde");
@@ -53,5 +57,8 @@ public class Tracker {
 				e.printStackTrace();
 			}
 		}
+		jpr.updateStatusProduct(productos);
 	}
+	
+
 }
